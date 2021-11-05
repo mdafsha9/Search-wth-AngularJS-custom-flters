@@ -1,0 +1,25 @@
+{
+  "name" : "Jani",
+  "country" : "Australa",
+  "price" : 30
+},
+{
+  "name" : "Vani",
+  "country" : "USA",
+  "price" : 50
+},
+{
+  "name" : "Tony",
+  "country" : "Russia",
+  "price" : 45
+},
+{
+  "name" : "Bonny",
+  "country" : "UK",
+  "price" : 22
+},
+{
+  "name" : "Stony",
+  "country" : "Germany",
+  "price" : 65
+}
