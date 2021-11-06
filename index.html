@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="vewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    </head>
+    <body ng-app="myApp">
+      <h1>Real-Time Search with AngularJS Custom filters</h1>
+      <div ng-controller="myCtrl"">
+        <table width="100%" border="1px solid black">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Country</th>
+              <th>Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr ng-repeat="myInf in myInfs ">
+              <td>{{myInf.name}}</td>
+              <td>{{myInf.country}}</td>
+              <td>{{myInf.price}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <script src="script.js"></script>
+      </body>
+</html
