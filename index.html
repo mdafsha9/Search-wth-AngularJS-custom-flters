@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta name="vewport" content="width=device-width, initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <link rel="stylesheet" href="style.css">
     </head>
     <body ng-app="myApp">
-      <h1>Real-Time Search with AngularJS Custom filters</h1>
+      <h3>Real-Time Search with AngularJS Custom filters</h3>
       <div ng-controller="myCtrl"">
-        Search Here: <input type="text" ng-model="searchText">
-        <table width="100%" border="1px solid black">
+        <div class="search">
+          <input type="text" placeholder="Search here..." ng-model="searchText">
+        </div>
+        <table>
           <thead>
             <tr>
               <th>Name</th>
