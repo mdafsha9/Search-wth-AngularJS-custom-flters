@@ -8,6 +8,7 @@
     <body ng-app="myApp">
       <h1>Real-Time Search with AngularJS Custom filters</h1>
       <div ng-controller="myCtrl"">
+        Search Here: <input type="text" ng-model="searchText">
         <table width="100%" border="1px solid black">
           <thead>
             <tr>
@@ -17,7 +18,7 @@
             </tr>
           </thead>
           <tbody>
-            <tr ng-repeat="myInf in myInfs ">
+            <tr ng-repeat="myInf in myInfs | filter:searchText | orderBy:'name' ">
               <td>{{myInf.name}}</td>
               <td>{{myInf.country}}</td>
               <td>{{myInf.price}}</td>
