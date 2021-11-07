@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="vewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+    </head>
+    <body ng-app="myAppPost">
+      <h2>http post method to send to employee.json file</h2>
+      <div ng-controller="myCtrlPost">
+        Name:<input type="text" ng-model="name" placeholder="Enter your name.."><br>
+        Country:<input type="text" ng-model="country" placeholder="Enter your country.."><br>
+        Price:<input type="number" ng-model="price" placeholder="Enter price value.."><br>
+        <input type="button" value="submit" ng-click="postdata(name, country, price)">
+      </div>
+      <div>
+        Ouptut message: {{msg}}<br>
+        Name:{{Name}}<br>
+        Country:{{Country}}<br>
+        Price:{{Price}}
+      </div>
+      <script src="script.js"></script>
+    </body>
+  </html>
